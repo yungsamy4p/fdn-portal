@@ -1,4 +1,7 @@
-// Reemplaza esta URL con la Webhook de tu canal en Discord
+// CODIGO ABIERTO BY YUNG SAMY - DISCORD: likeadversario
+// GITHUB: https://github.com/yungsamy4p/fdn-portal
+// INSTAGRAM: https://www.instagram.com/yungsamy4p
+
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1549160935011127407/d0Tx7icC44tqc3a8awAAUHRXLZXt-iEGn9eSgawlP5mruHrWxtpTS_2sdJgDumq2Qlg5";
 
 document.getElementById('enlistForm').addEventListener('submit', async function (e) {
