@@ -30,11 +30,9 @@ body {
 /* HEADER MILITAR */
 .tactical-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--accent-gold);
-  padding-bottom: 15px;
-  margin-bottom: 30px;
+  justify-content: space-between; 
+  width: 100%;
 }
 
 .logo-area {
@@ -208,6 +206,7 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: auto; 
 }
 
 .btn-tactical {
