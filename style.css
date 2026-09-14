@@ -19,17 +19,21 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: 'Share Tech Mono', monospace;
   line-height: 1.5;
-  margin: 0;
-  padding: 15px 30px;
-  min-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important; 
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
 /* HEADER MILITAR */
@@ -38,8 +42,9 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--accent-gold);
-  padding-bottom: 15px;
+  padding: 15px 30px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .logo-area {
@@ -85,7 +90,9 @@ h1 {
   gap: 25px;
   max-width: 1200px;
   width: 100%;
-  margin: auto auto 40px auto; 
+  margin: 60px auto auto auto; 
+  padding: 0 20px 40px 20px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 850px) {
