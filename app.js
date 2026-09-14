@@ -16,18 +16,22 @@ document.getElementById('enlistForm').addEventListener('submit', async function 
   submitBtn.innerText = "ENVIANDO REPORTE CIFRADO...";
   statusMsg.innerText = "";
 
+    const ROL_ESTADO_MAYOR_ID = "1543494798986575953"; // Pega aquí el ID numérico de Discord
+
   const payload = {
     username: "CENTRAL DE COMANDO FDN",
-    avatar_url: "https://cdn.discordapp.com/attachments/1543495355318927392/1545704842108866630/logofdnnewgen2.png", 
+    avatar_url: "https://cdn.discordapp.com/attachments/1543495355318927392/1545704842108866630/logofdnnewgen2.png",
+    // Esta línea dispara el ping sonoro y la alerta a los miembros del rol:
+    content: `**ALERTA DE RECLUTAMIENTO** <@&${ROL_ESTADO_MAYOR_ID}>`,
     embeds: [
       {
-        title: "📄 NUEVA SOLICITUD DE ENLISTAMIENTO RECIBIDA",
+        title: "<:flagofusaincircleshapeamericanro:1543495568268071023> NUEVA SOLICITUD DE ENLISTAMIENTO RECIBIDA",
         color: 0x4b5320, 
         fields: [
-          { name: "🪖 Callsign / Identificador", value: `\`${callsign}\``, inline: true },
-          { name: "📡 Contacto Discord", value: `\`${discord}\``, inline: true },
-          { name: "🎯 División Solicitada", value: division, inline: false },
-          { name: "📝 Declaración / Experiencia", value: motivation, inline: false }
+          { name: "<:profile:1543495540304519188> Identificador / Nombre", value: `\`${callsign}\``, inline: true },
+          { name: "<:checklist:1543495552702877767> Contacto Discord", value: `\`${discord}\``, inline: true },
+          { name: "<:divfdn:1543495592188190740> División Solicitada", value: division, inline: false },
+          { name: "<:pencilfdn:1543495561989197914> Declaración / Experiencia", value: motivation, inline: false }
         ],
         footer: {
           text: "FDN Tactical Systems // Registro Automático"

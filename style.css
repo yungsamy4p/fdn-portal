@@ -199,3 +199,28 @@ button:hover {
 .logo-area h1 {
   margin-bottom: 2px;
 }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-tactical {
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  padding: 6px 14px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-tactical:hover {
+  background: var(--accent-gold);
+  color: #0c0f0a;
+  box-shadow: 0 0 8px rgba(194, 155, 56, 0.4);
+}
