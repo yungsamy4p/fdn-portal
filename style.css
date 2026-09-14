@@ -227,10 +227,3 @@ button:hover {
   color: #0c0f0a;
   box-shadow: 0 0 8px rgba(194, 155, 56, 0.4);
 }
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-}
