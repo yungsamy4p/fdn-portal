@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDN // FUERZAS DE DEFENSA NACIONAL</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="tactical-header">
+    <div class="logo-area">
+      <div class="insignia">FDN</div>
+      <div>
+        <h1>FUERZAS DE DEFENSA NACIONAL</h1>
+        <p class="subtitle">COMANDO CENTRAL // SECTOR OPERATIVO</p>
+      </div>
+    </div>
+    <div class="status-indicator">
+      <span class="blink">●</span> SISTEMA ACTIVO / DEFCON 2
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- SECCIÓN DE NOTICIAS -->
+    <section class="panel news-panel">
+      <h2 class="panel-title">[01] TRANSMISIONES & COMUNICADOS</h2>
+      
+      <article class="news-item">
+        <span class="news-date">2026.09.12 // 0400 HRS</span>
+        <h3>DESPLIEGUE GENERAL Y REAGRUPAMIENTO</h3>
+        <p>Se ordena la apertura formal de protocolos de reclutamiento táctico. Todos los nuevos efectivos deben registrarse de forma inmediata a través del enlace de transmisión cifrado.</p>
+      </article>
+
+      <article class="news-item">
+        <span class="news-date">2026.08.28 // 1830 HRS</span>
+        <h3>REESTRUCTURACIÓN DE LA CADENA DE MANDO</h3>
+        <p>Los protocolos de logística e infantería han sido unificados bajo directiva central. Preparación de suministros en marcha.</p>
+      </article>
+    </section>
+
+    <!-- FORMULARIO DE ENLISTAMIENTO -->
+    <section class="panel form-panel">
+      <h2 class="panel-title">[02] FORMULARIO DE ENLISTAMIENTO</h2>
+      <form id="enlistForm">
+        
+        <div class="input-group">
+          <label for="callsign">IDENTIFICADOR / CALLSIGN</label>
+          <input type="text" id="callsign" placeholder="Ej: SPARTAN-117" required autocomplete="off">
+        </div>
+
+        <div class="input-group">
+          <label for="discord">TAG DE DISCORD / ID DE CONTACTO</label>
+          <input type="text" id="discord" placeholder="usuario_fdn" required autocomplete="off">
+        </div>
+
+        <div class="input-group">
+          <label for="division">DIVISIÓN SOLICITADA</label>
+          <select id="division" required>
+            <option value="INFANTERIA">DIVISIÓN I - INFANTERÍA LIGERA</option>
+            <option value="LOGISTICA">DIVISIÓN II - LOGÍSTICA & SOPORTE</option>
+            <option value="INTELIGENCIA">DIVISIÓN III - INTELIGENCIA Y COMUNICACIONES</option>
+            <option value="BLINDADOS">DIVISIÓN IV - ASALTO & FUERZAS ESPECIALES</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="motivation">DECLARACIÓN DE INTENCIÓN / EXPERIENCIA</label>
+          <textarea id="motivation" rows="4" placeholder="Reporte sus capacidades y motivos de adhesión a FDN..." required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">TRANSMITIR EXPEDIENTE</button>
+        <div id="statusMessage" class="status-msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
